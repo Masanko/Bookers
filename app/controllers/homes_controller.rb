@@ -1,6 +1,9 @@
 class HomesController < ApplicationController
+  
   def index
-    @Homes = homes.all
+    
+   @homes=Home.all
+   
   end
   
 end
