@@ -3,20 +3,18 @@
 <h1>Books</h1>
 
 
-<h2>New Book<h2>
+<h2>New Book</h2>
+<!-- form_with部分 -->
+<%= form_with model:@book, local:true do |f| %>
 
-<%= form_with model:@book,local:true do|f|%>
-<div class="field">
-<div class="book_title"><p>Title</p></div>
-<div class=text_field><%=f.text_field:title %></div>
-</div>
+  <h4>タイトル</h4>
+  <%= f.text_field :title %>
 
-<div class="field">
-<div class="book_body"><p>Body</p></div>
-<div class=text_area><%=f.text_area:body %></div>
-</div>
+  <h4>本文</h4>
+  <%= f.text_area :body %>
 <h4></h4>
-<%= f.submit 'Create Book' %>
+  <%= f.submit 'Create Bookers' %>
 
 <%end%>
+
 </body>
