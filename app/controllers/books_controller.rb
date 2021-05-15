@@ -7,6 +7,7 @@ class BooksController < ApplicationController
     @books = Book.all
     @book = Book.new
     
+    
    
   end
 
@@ -21,6 +22,20 @@ class BooksController < ApplicationController
   end
   
   def edit
+     @book = Book.find(params[:id])
+  end
+  
+  def update
+    book = Book.find(params[:id])
+    book.update(book_params)
+    redirect_to "/books/#{book.id}"
+    # あとで正しいリンク先に修正
+  end
+  
+  def destroy
+    book = Book.find(params[:id])
+    book.destroy
+    redirect_to blogs_path
   end
   
   private
@@ -28,4 +43,5 @@ class BooksController < ApplicationController
    params.require(:book).permit(:title, :body)
   end
   
+
 end

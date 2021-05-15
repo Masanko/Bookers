@@ -3,6 +3,9 @@
 
 <% @books.each do |book| %>
 <%= link_to book.title, "/books/#{book.id}" %> <%= link_to book.body, "/books/#{book.id}" %>
+<%= link_to "show","/books/#{book.id}" %>
+
+
 <%end%>
 <h2>New Book</h2>
 <!-- form_with部分 -->
