@@ -1,0 +1,24 @@
+
+p,a{
+  font-size:13px;
+  margin:33px;
+}
+
+storong {
+    font-weight: bold;
+}
+
+
+body {
+  background-color: #fff;
+    color: #333;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 33px;
+}
+
+.field,.text_area,.text_field,.book_title,.book_body,h4{
+  display:blok;
+  margin-bottom:3px;
+}
