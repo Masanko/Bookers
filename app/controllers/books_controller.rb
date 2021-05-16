@@ -18,7 +18,7 @@ class BooksController < ApplicationController
   def create
     book = Book.new(book_params)
     book.save
-    redirect_to books_path
+    redirect_to book_path(book.id)
   end
   
   def edit
@@ -28,14 +28,13 @@ class BooksController < ApplicationController
   def update
     book = Book.find(params[:id])
     book.update(book_params)
-    redirect_to "/books/#{book.id}"
-    # あとで正しいリンク先に修正
+    redirect_to book_path(book.id)
   end
   
   def destroy
     book = Book.find(params[:id])
     book.destroy
-    redirect_to blogs_path
+    redirect_to books_path
   end
   
   private
