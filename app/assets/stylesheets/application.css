@@ -1,3 +1,16 @@
+#notice{
+    color: green;
+}
+
+body {    
+    background-color: #fff;
+    color: #333;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 33px;
+}
+
 a{color:000;}
 
 div{
@@ -26,6 +39,7 @@ h1 {
 }
 
 p,td {
+  
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -40,14 +54,7 @@ storong {
 }
 
 
-body {    
-    background-color: #fff;
-    color: #333;
-    font-family: verdana, arial, helvetica, sans-serif;
-    font-size: 13px;
-    line-height: 18px;
-    margin: 33px;
-}
+
 
 
 table{
